@@ -13,6 +13,7 @@
     "intl": "^1.2.5",
     "numeral": "^2.0.6",
     "polished": "^3.4.1",
+    "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-icons": "^3.7.0",
     "react-native": "0.60.5",

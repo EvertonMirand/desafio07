@@ -13,7 +13,7 @@ export function addToCartRequest(id) {
   };
 }
 
-export function addToCartSucess(product) {
+export function addToCartSuccess(product) {
   return {
     type: CART_ADD_SUCESS,
     product,
@@ -28,7 +28,7 @@ export function updateAmountRequest(id, amount) {
   };
 }
 
-export function updateAmountSucess(id, amount) {
+export function updateAmountSuccess(id, amount) {
   return {
     type: CART_UPDATE_AMOUNT_SUCESS,
     id,

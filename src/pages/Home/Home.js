@@ -17,6 +17,7 @@ import {
 import * as CartAction from '../../store/modules/cart/actions';
 import api from '../../services/api';
 import { formatPrice } from '../../util/format';
+// import Product from '../../components/Product/Product';
 
 class Home extends Component {
   constructor(props) {
@@ -49,6 +50,7 @@ class Home extends Component {
 
   renderProduct = ({ item }) => {
     const { amount } = this.props;
+
     return (
       <Product key={item.id}>
         <ProductImage source={{ uri: item.image }} />
@@ -72,6 +74,7 @@ class Home extends Component {
         <FlatList
           horizontal
           data={products}
+          extraData={this.props}
           keyExtractor={item => String(item.id)}
           renderItem={this.renderProduct}
         />
